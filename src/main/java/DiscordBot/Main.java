@@ -9,7 +9,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String token = "ODkwNjM5Mjg2MTI5NTQ5Mzcy.YUyueQ.1veTM90PAJkvS1I77DO1UrcRXmc";
+       String token = System.getenv("TOKEN");
+
         DiscordApi api = new DiscordApiBuilder().setToken(token)
                 .setAllNonPrivilegedIntents()
                 .login()
